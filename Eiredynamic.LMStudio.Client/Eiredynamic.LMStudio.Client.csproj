@@ -11,7 +11,7 @@
     <Authors>eiredynamic</Authors>
     <Description>LMStudio.Client is a .NET library for interacting with the LMStudio API.</Description>
     <Copyright></Copyright>
-    <RepositoryUrl>https://github.com/eiredynamic/eiredynamic.lmstudio</RepositoryUrl>
+    <RepositoryUrl>https://github.com/eiredynamic/lmstudio-client-dotnet</RepositoryUrl>
     <PackageTags>ai;lmstudio;api-client;dotnet</PackageTags>
     <Company></Company>
     <IncludeSymbols>True</IncludeSymbols>
