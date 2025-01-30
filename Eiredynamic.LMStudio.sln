@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eiredynamic.LMStudio.Client", "Eiredynamic.LMStudio.Client\Eiredynamic.LMStudio.Client.csproj", "{BA717CDF-C5CC-44F0-A246-E8A8A36432BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eiredynamic.LMStudio.ExampleApp", "Eiredynamic.LMStudio.ExampleApp\Eiredynamic.LMStudio.ExampleApp.csproj", "{4F2FCD3B-27A5-49A0-B15C-0AF69113CEC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eiredynamic.LMStudio.Client.Tests", "Eiredynamic.LMStudio.Client.Tests\Eiredynamic.LMStudio.Client.Tests.csproj", "{C0423BFA-2C18-4132-98DE-7B8E07872BDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{25A0B740-E2D9-4AEA-B27C-25D1B8220C50}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA717CDF-C5CC-44F0-A246-E8A8A36432BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA717CDF-C5CC-44F0-A246-E8A8A36432BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA717CDF-C5CC-44F0-A246-E8A8A36432BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA717CDF-C5CC-44F0-A246-E8A8A36432BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F2FCD3B-27A5-49A0-B15C-0AF69113CEC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F2FCD3B-27A5-49A0-B15C-0AF69113CEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F2FCD3B-27A5-49A0-B15C-0AF69113CEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F2FCD3B-27A5-49A0-B15C-0AF69113CEC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0423BFA-2C18-4132-98DE-7B8E07872BDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0423BFA-2C18-4132-98DE-7B8E07872BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0423BFA-2C18-4132-98DE-7B8E07872BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0423BFA-2C18-4132-98DE-7B8E07872BDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
