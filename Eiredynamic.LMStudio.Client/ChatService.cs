@@ -5,7 +5,7 @@ namespace Eiredynamic.LMStudio.Client;
 
 public interface IChatService
 {
-    public abstract IAsyncEnumerable<string> ChatClient(string usrPrompt, string sysPromt, string endpoint, bool includeReasoning);
+    public abstract IAsyncEnumerable<string> Chat(string usrPrompt, string sysPromt, string endpoint, bool includeReasoning);
 }
 public class ConcreteChatService : IChatService
 {
@@ -15,7 +15,7 @@ public class ConcreteChatService : IChatService
     {
         Timeout = TimeSpan.FromSeconds(60),
     };
-    public async IAsyncEnumerable<string> ChatClient(string usrPrompt, string sysPromt, string endpoint, bool includeReasoning)
+    public async IAsyncEnumerable<string> Chat(string usrPrompt, string sysPromt, string endpoint, bool includeReasoning)
     {
         if (!Uri.IsWellFormedUriString(endpoint, UriKind.Absolute))
         {
@@ -29,7 +29,7 @@ public class ConcreteChatService : IChatService
                {
                     new { role = "system", content = sysPromt },
                     new { role = "user", content = usrPrompt }
-                }
+               }
         };
 
         // Serialize the request body
@@ -94,7 +94,7 @@ public class ConcreteChatService : IChatService
 }
 public class DummyChatService : IChatService
 {
-    public async IAsyncEnumerable<string> ChatClient(string usrPrompt, string sysPromt, string endpoint, bool includeReasoning)
+    public async IAsyncEnumerable<string> Chat(string usrPrompt, string sysPromt, string endpoint, bool includeReasoning)
     {
         if (!Uri.IsWellFormedUriString(endpoint, UriKind.Absolute))
         {

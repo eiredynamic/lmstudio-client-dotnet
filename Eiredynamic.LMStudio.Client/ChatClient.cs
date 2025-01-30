@@ -17,7 +17,7 @@ namespace Eiredynamic.LMStudio.Client
         public async Task<string> ChatAsync(string usrPrompt, string sysPromt = _sysPromt, string endpointRoot = _endpointRoot, bool includeReasoning = false)
         {
             var result = new StringBuilder();
-            await foreach (var line in _chatService.ChatClient(usrPrompt, sysPromt, BuildEndpoint(endpointRoot), includeReasoning))
+            await foreach (var line in _chatService.Chat(usrPrompt, sysPromt, BuildEndpoint(endpointRoot), includeReasoning))
             {
                 result.Append(line);
             }
@@ -25,7 +25,7 @@ namespace Eiredynamic.LMStudio.Client
         }
         public async IAsyncEnumerable<string> StreamChatAsync(string usrPrompt, string sysPromt = _sysPromt, string endpointRoot = _endpointRoot, bool includeReasoning = false)
         {
-            await foreach (string line in _chatService.ChatClient(usrPrompt, sysPromt, BuildEndpoint(endpointRoot), includeReasoning))
+            await foreach (string line in _chatService.Chat(usrPrompt, sysPromt, BuildEndpoint(endpointRoot), includeReasoning))
             {
                 yield return line;
             }
