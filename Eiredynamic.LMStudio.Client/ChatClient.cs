@@ -10,9 +10,9 @@ namespace Eiredynamic.LMStudio.Client
         
         private readonly IChatService _chatService;
 
-        public ChatClient(IChatService? studioService = null)
+        public ChatClient(IChatService? chatService = null)
         {
-            _chatService = studioService ?? new ConcreteChatService();
+            _chatService = chatService ?? new ConcreteChatService();
         }
         public async Task<string> ChatAsync(string usrPrompt, string sysPromt = _sysPromt, string endpointRoot = _endpointRoot, bool includeReasoning = false)
         {
