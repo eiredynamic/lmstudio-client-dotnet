@@ -47,7 +47,7 @@ public async Task<string> ChatAsync(string usrPrompt, string sysPromt = _sysProm
 - `usrPrompt`: The user's prompt to the LLM.
 - `sysPromt`: (Optional) System prompt providing guidance to the model.
 - `endpointRoot`: (Optional) Base URL of the LMStudio server (default: `http://localhost:1234/v1/`).
-- `includeReasoning`: (Optional) Whether to include reasoning in the response.
+- `includeReasoning`: (Optional) Whether to include reasoning in the response, if the model support it.
 
 ```csharp
 public async IAsyncEnumerable<string> StreamChatAsync(string usrPrompt, string sysPromt = _sysPromt, string endpointRoot = _endpointRoot, bool includeReasoning = false)
@@ -56,7 +56,7 @@ public async IAsyncEnumerable<string> StreamChatAsync(string usrPrompt, string s
 - `usrPrompt`: The user's prompt to the LLM.
 - `sysPromt`: (Optional) System prompt providing guidance to the model.
 - `endpointRoot`: (Optional) Base URL of the LMStudio server (default: `http://localhost:1234/v1/`).
-- `includeReasoning`: (Optional) Whether to include reasoning in the streamed response.
+- `includeReasoning`: (Optional) Whether to include reasoning in the streamed response, if the model support it.
 
 ## Example Application
 An example console application (`ExampleApp`) is included to demonstrate how to interact with LMStudio using this client.
